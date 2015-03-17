@@ -1,0 +1,65 @@
+{
+  "name": "arus-ps-connector",
+  "version": "0.5.4-alpha",
+  "description": "A PeopleSoft Connector for Arus",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --colors --watch",
+    "build-dev": "NODE_ENV=development&& webpack --progress --colors --watch",
+    "build-prod": "NODE_ENV=production&& webpack --progress --colors -p",
+    "build-test": "NODE_ENV=test&& webpack --progress --colors --watch",
+    "build-dev-win": "set NODE_ENV=development&& webpack --progress --colors --watch",
+    "build-prod-win": "set NODE_ENV=production&& webpack --progress --colors -p",
+    "build-test-win": "set NODE_ENV=test&& webpack --progress --colors --watch",
+    "start": "webpack-dev-server --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ganonside/arus-ps-connector.git"
+  },
+  "author": {
+    "name": "Jon Horner"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arus-project/arus-ps-connector/issues"
+  },
+  "homepage": "https://github.com/arus-project/arus-ps-connector",
+  "dependencies": {
+    "moment": "^2.9.0",
+    "superagent": "^0.21.0",
+    "underscore": "^1.7.0",
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {
+    "6to5": "^3.3.10",
+    "6to5-core": "^3.3.10",
+    "6to5-loader": "^3.0.0",
+    "convict": "^0.6.1",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "gitHead": "eca4300ccb6bab5d6c934a750fbd5de0ce58cbf4",
+  "_id": "arus-ps-connector@0.5.4-alpha",
+  "_shasum": "e007b1d4d4c0ca2441dde90dac0c638db4b0845d",
+  "_from": "arus-ps-connector@^v0.5.0-alpha",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "arus",
+    "email": "ronn.ross@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "arus",
+      "email": "ronn.ross@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "e007b1d4d4c0ca2441dde90dac0c638db4b0845d",
+    "tarball": "http://registry.npmjs.org/arus-ps-connector/-/arus-ps-connector-0.5.4-alpha.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/arus-ps-connector/-/arus-ps-connector-0.5.4-alpha.tgz",
+  "readme": "ERROR: No README data found!"
+}

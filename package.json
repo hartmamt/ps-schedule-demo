@@ -84,7 +84,6 @@
     }
   },
   "dependencies": {
-    "arus-ps-connector": "^0.6.1-alpha",
     "moment": "^2.9.0",
     "react": "^0.12.2",
     "react-avatar": "git://github.com/Sitebase/react-avatar",

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PSConnector from 'arus-ps-connector';
+import PSConnector from '../arus-ps-connector';
 
 /* Flux stuff */
 import Reflux from 'reflux';
