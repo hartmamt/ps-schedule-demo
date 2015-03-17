@@ -20,4 +20,5 @@ npm init
 npm run start
 ```
 
+Then point your browser to http://localhost:8080
 
