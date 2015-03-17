@@ -24,3 +24,5 @@ npm run start
 
 Then point your browser to http://localhost:8080
 
+![](https://github.com/hartmamt/ps-schedule-demo/blob/master/image/screen-shot.png)
+
