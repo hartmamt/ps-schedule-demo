@@ -1,5 +1,7 @@
 #Weekly Schedule Demo
 
+Please note this is a very rough demo and is a work in progress...
+
 This project contains a basic `React` components that can be used to display a weekly class schedule. It also communicates with `black-lion` and handles passing the remote request responses from  using the delivered PeopleSoft REST api.
 
 To run this locally you must first create a file called development.json like this:
