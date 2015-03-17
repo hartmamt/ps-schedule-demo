@@ -1,0 +1,111 @@
+{
+  "name": "arus-main",
+  "version": "0.0.1",
+  "description": "place holder for main arus project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --colors --watch",
+    "build-dev": "NODE_ENV=development&& webpack --progress --colors --watch",
+    "build-remote": "NODE_ENV=remote&& webpack --progress --colors --watch",
+    "build-prod": "NODE_ENV=production&& webpack --progress --colors -p",
+    "build-test": "NODE_ENV=test&& webpack --progress --colors",
+    "build-dev-win": "set NODE_ENV=development&& webpack --progress --colors --watch",
+    "build-remote-win": "set NODE_ENV=remote&& webpack --progress --colors --watch",
+    "build-prod-win": "set NODE_ENV=production&& webpack --progress --colors -p",
+    "build-test-win": "set NODE_ENV=test&& webpack --progress --colors",
+    "start": "webpack-dev-server --progress --colors",
+    "start-remote": "NODE_ENV=remote&& webpack-dev-server --progress --colors",
+    "start-remote-win": "set NODE_ENV=remote&& webpack-dev-server --progress --colors",
+    "test": "eslint ."
+  },
+  "author": "University of Cincinnati <opensource@uc.edu> (http://uc.edu/)",
+  "repository": {
+    "type": "git",
+    "url": "https://git.uc.edu/sis-tech/arus-main.git"
+  },
+  "bugs": {
+    "url": "https://git.uc.edu/sis-tech/arus-main/issues"
+  },
+  "license": "MIT",
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "globals": {
+      "__USERNAME__": false,
+      "__PASSWORD__": false,
+      "__PROFILE_URL__": false,
+      "__PICTURE_URL__": false,
+      "__SCHEDULE_URL__": false,
+      "__NOTIFICATIONS_URL__": false,
+      "__EVENTS_URL__": false,
+      "__MARK_AS_READ_URL__": false
+    },
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "templateStrings": true,
+      "jsx": true
+    },
+    "rules": {
+      "strict": [
+        0
+      ],
+      "no-trailing-spaces": [
+        0
+      ],
+      "no-use-before-define": [
+        0
+      ],
+      "new-cap": [
+        0
+      ],
+      "quotes": [
+        1,
+        "single"
+      ],
+      "no-underscore-dangle": [
+        1
+      ],
+      "no-unused-vars": [
+        1
+      ],
+      "no-multi-spaces": [
+        1
+      ],
+      "handle-callback-err": [
+        1
+      ],
+      "valid-jsdoc": [
+        2
+      ]
+    }
+  },
+  "dependencies": {
+    "arus-ps-connector": "^0.6.1-alpha",
+    "moment": "^2.9.0",
+    "react": "^0.12.2",
+    "react-avatar": "git://github.com/Sitebase/react-avatar",
+    "react-bootstrap": "^0.13.3",
+    "reflux": "^0.2.5",
+    "superagent": "^0.21.0",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel": "^4.6.6",
+    "babel-core": "^4.6.6",
+    "babel-eslint": "^1.0.12",
+    "babel-loader": "^4.0.0",
+    "convict": "^0.6.1",
+    "css-loader": "^0.9.0",
+    "cssnext-loader": "^1.0.0",
+    "eslint": "^0.15.1",
+    "jsdoc": "^3.3.0-alpha13",
+    "react-hot-loader": "^1.1.6",
+    "style-loader": "^0.8.2",
+    "webpack": "^1.7.2",
+    "webpack-dev-server": "^1.7.0"
+  }
+}

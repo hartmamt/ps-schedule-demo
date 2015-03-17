@@ -1,0 +1,105 @@
+
+:root{
+  --dark-gray: #607D8b;
+  --light-gray: #ececec;
+  --red: #f44336;
+  --green: #4caf50;
+  --yellow: #fcd059;
+
+  --default: var(--light-gray);
+  --primary: var(--dark-gray);
+  --success: var(--green);
+  --info: var(--dark-gray);
+  --warning: var(--yellow);
+  --danger: var(--red);  
+}
+/*.ArusContainer{
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+}*/
+.ArusNotification{
+  
+}
+.LauncherImg > div> a> img{
+  width: 100px;
+  height: 100px;
+}
+.courseSearch{
+
+}
+.daySchedule > *+*{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.scheduleItem{
+  
+}
+.dayScheduleCol{
+  padding-left: 5px;
+  padding-right: 5px;
+  
+}
+
+.daySchedule-panel > .panel-body{
+  padding: 0px;
+}
+.daySchedule-panel > .panel-body > .list-group{
+  margin-bottom: 0px;
+}
+@media(min-width: 768px){
+  .dayScheduleCol{
+    width: 20%;
+  }
+}
+@media(max-width: 768px){
+  .dayScheduleCol{
+    width: 100%;
+  }
+}
+@media(max-width: 480px){
+  .menuCol{
+     display: none;
+  }
+  .containerCol {
+    z-index: 10;
+    width: 100%;
+  }
+}
+.panel-heading > .list-group{
+  margin-bottom: 0px;
+}
+
+.daySchedule-panel{
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.daySchedule-panel > .list-group{
+  margin-bottom: 0px;
+}
+.ArusLauncher{
+  background-color: #fff;  
+}
+.ArusLauncher img{
+  height: 100%;
+  width: 100%;
+  
+}
+.ArusProfileSnippet{
+  background-color: #fff;  
+}
+.ArusProfileSnippet img{
+  height: 70%;
+  width: 70%;
+}
+.profileImg{
+  height: 30%;
+}
+.ArusHomeAddons{
+  float: right;
+}
+.ArusHomeAddons i {
+  padding: 1em;
+}
