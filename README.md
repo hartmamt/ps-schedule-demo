@@ -1,3 +1,3 @@
-#arus-main
+#Weekly Schedule Demo
 
-This project will contain all the `React` components used in your project and handle rendering them. It also communicates with your implementation of `black-lion` and handles passing the remote request responses into the your components.
+This project contains a basic `React` components that can be used to display a weekly class schedule. It also communicates with `black-lion` and handles passing the remote request responses from  using the delivered PeopleSoft REST api.
