@@ -87,6 +87,7 @@
     "moment": "^2.9.0",
     "react": "^0.12.2",
     "react-bootstrap": "^0.13.3",
+    "react-loader": "^1.2.0",
     "reflux": "^0.2.5",
     "superagent": "^0.21.0",
     "underscore": "^1.7.0",

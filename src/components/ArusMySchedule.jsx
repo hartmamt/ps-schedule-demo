@@ -1,8 +1,10 @@
-var React = require('react');
-var rbootstrap = require('react-bootstrap');
-var moment = require('moment');
-var _ = require('underscore');
-var Card = require('./Card/Card.jsx');
+import React from 'react';
+import rbootstrap from 'react-bootstrap';
+import moment from 'moment';
+import _ from 'underscore';
+import Card from './Card/Card.jsx';
+import Loader from 'react-loader';
+
 /* eslint-disable */
 
 
@@ -16,6 +18,14 @@ var ArusMySchedule = React.createClass({
 		/**
 		 * Set currentTerm
 		 */
+		let loader = null;
+
+		if (this.props.schedule.terms==undefined){
+			loader = <Loader/>;
+		}
+
+		//loader = <Loader/>;
+
 		let currentTerm = {};
 		let currentTime = moment().format('YYYY-MM-DD');
 
@@ -145,6 +155,7 @@ var ArusMySchedule = React.createClass({
 			<div className='daySchedule'>
 				<h3>Weekly Schedule</h3>
 				<hr/>
+				{loader}
 				{schedule}
 			</div>
 		);
