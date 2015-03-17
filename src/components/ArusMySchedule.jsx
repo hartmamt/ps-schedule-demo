@@ -68,7 +68,7 @@ var ArusMySchedule = React.createClass({
 							let time = null;// 'MWF: 12:00am - 12:01am';
 
 							if (session.daysTimes!=='F: Invalid Time - Invalid Time') {
-								console.log('session daystimes',session.daysTimes);
+
 								try {
 									time = /[A-Z]+: ([\d: \-(?:am|pm)]+)/.exec(session.daysTimes)[1];
 									//time = /[A-Z]+: ([\d: \-(?:am|pm)]+)/.exec(session.daysTimes == 'F: Invalid Time - Invalid Time' ? 'MWF: 11:00am - 12:00pm' : session.daysTimes  )[1];
@@ -76,7 +76,7 @@ var ArusMySchedule = React.createClass({
 									console.error(err);
 									//time= 'MWF: 11:00am - 12:00pm'
 								}
-								console.log('time',time);
+
 								let start = /([\d:(?:am|pm)]+)/.exec(time)[1];
 
 								startTimes.push( moment(start, 'hh:mma').format('HH:mm'));
