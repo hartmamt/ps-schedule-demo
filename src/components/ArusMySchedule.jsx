@@ -32,7 +32,6 @@ var ArusMySchedule = React.createClass({
 		if (this.props.schedule.terms !== undefined) {
 			for (let i = 0; i < this.props.schedule.terms.length; ++i) {
 				let term = this.props.schedule.terms[i];
-
 				let termBegin = moment(term.termBeginDate);
 				let termEnd = moment(term.termEndDate);
 
@@ -42,6 +41,8 @@ var ArusMySchedule = React.createClass({
 				}
 			}
 		}
+
+		console.log('current term', currentTerm.termName);
 
 		/**
 		 * Initialize day names and day abbreviations.
@@ -153,7 +154,7 @@ var ArusMySchedule = React.createClass({
 
 		return (
 			<div className='daySchedule'>
-				<h3>Weekly Schedule</h3>
+				<h3>{currentTerm.termName}</h3>
 				<hr/>
 				{loader}
 				{schedule}
