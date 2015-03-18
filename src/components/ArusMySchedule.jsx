@@ -144,7 +144,7 @@ var ArusMySchedule = React.createClass({
 		let schedule = days.map((day) => {
 			if (!_.isEmpty(dayPanels[day])) {
 				return (
-					<Col sm={12} >
+					<Col sm={12} className='dayScheduleCol'>
 						<h4>{day}</h4>
 						{dayPanels[day]}
 					</Col>
